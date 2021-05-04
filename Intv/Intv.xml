@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Intv</name>
+    </assembly>
+    <members>
+        <member name="M:Intv.Controllers.AccountController.Login(Intv.ViewModels.LoginViewModel)">
+            <summary>
+            Авторизация пользователья
+            login:admin@gmail.com pass:123456,
+            login:customer1@mail.ru pass:111111,
+            login:customer2@mail.ru pass:222222,
+            login:customer3@mail.ru pass:333333,
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Intv.Controllers.ItemsController.Get">
+            <summary>
+            Список товаров
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Intv.Controllers.ItemsController.Get(System.Int32)">
+            <summary>
+            Товар по Id
+            </summary>
+            <param name="id"> Id товара</param>
+            <returns></returns>
+        </member>
+        <member name="M:Intv.Controllers.ItemsController.Post(Intv.ViewModels.ItemsViewModel)">
+            <summary>
+            Добавление товара
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Intv.Controllers.ItemsController.Put(System.Int32,Intv.ViewModels.ItemsViewModel)">
+            <summary>
+            Обновление товара
+            </summary>
+            <param name="id">Id товара</param>
+            <param name="model">Тело</param>
+            <returns></returns>
+        </member>
+        <member name="M:Intv.Controllers.ItemsController.Delete(System.Int32)">
+            <summary>
+            Удаление товара по Id
+            </summary>
+            <param name="id">Id товара</param>
+            <returns></returns>
+        </member>
+        <member name="M:Intv.Controllers.OrdersController.Get(System.String,System.String,System.Int32)">
+            <summary>
+            Список заказов с пагинации
+            </summary>
+            <param name="itemName">Название товара</param>
+            <param name="regionName">Название региона</param>
+            <param name="page">Страница</param>
+            <returns></returns>
+        </member>
+        <member name="M:Intv.Controllers.OrdersController.Get(System.Int32)">
+            <summary>
+            Получение заказа по Id
+            </summary>
+            <param name="id">Id заказа</param>
+            <returns></returns>
+        </member>
+        <member name="M:Intv.Controllers.OrdersController.Post(Intv.ViewModels.OrdersViewModel)">
+            <summary>
+            Добавление заказа (role:Customer)
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Intv.Controllers.OrdersController.Put(System.Int32,Intv.ViewModels.OrdersViewModel)">
+            <summary>
+            Изменение заказа (role:Customer)
+            </summary>
+            <param name="id">Заказ Id</param>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Intv.Controllers.OrdersController.Delete(System.Int32)">
+            <summary>
+            Удаление заказа
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Intv.Controllers.RegionsController.Get">
+            <summary>
+            Список регионов
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Intv.Controllers.RegionsController.Get(System.Int32,Intv.Helpers.DapperService)">
+            <summary>
+            Полуние региона по IDd
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Intv.Controllers.RegionsController.Post(Intv.ViewModels.RegionsViewModel)">
+            <summary>
+            Добавление региона
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Intv.Controllers.RegionsController.Put(System.Int32,Intv.ViewModels.RegionsViewModel)">
+            <summary>
+            Обновление региона
+            </summary>
+            <param name="id">Id региона</param>
+            <returns></returns>
+        </member>
+        <member name="M:Intv.Controllers.RegionsController.Delete(System.Int32)">
+            <summary>
+            Удаление региона
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Intv.Controllers.ReportsController.Get(System.DateTime,System.DateTime)">
+            <summary>
+            Список заказов между датами
+            </summary>
+            <param name="from">От - 2021-05-01</param>
+            <param name="to">До - 2021-05-04</param>
+            <returns></returns>
+        </member>
+        <member name="M:Intv.Controllers.ReportsController.GetResult(System.Int32)">
+            <summary>
+            Список заказов по региону
+            </summary>
+            <param name="id">Регион id</param>
+            <returns></returns>
+        </member>
+        <member name="F:Intv.Helpers.DapperService.Parameter.Name">
+            <summary>Название параметра @..</summary>
+        </member>
+        <member name="F:Intv.Helpers.DapperService.Parameter.Value">
+            <summary>Значение параметра</summary>
+        </member>
+        <member name="F:Intv.Helpers.DapperService.Parameter.Type">
+            <summary>Тип параметра</summary>
+        </member>
+        <member name="F:Intv.Helpers.DapperService.Parameter.Size">
+            <summary>Длина значения</summary>
+        </member>
+    </members>
+</doc>
