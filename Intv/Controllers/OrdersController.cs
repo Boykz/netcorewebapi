@@ -141,7 +141,7 @@ namespace Intv.Controllers
         /// <param name="model"></param>
         /// <returns></returns>
         [HttpPut("{id}")]
-        //[Authorize(Roles = "Customer")]
+        [Authorize(Roles = "Customer")]
         public JsonResult Put(int id, [FromBody] OrdersViewModel model)
         {
             if (!ModelState.IsValid)

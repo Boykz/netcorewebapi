@@ -8,12 +8,14 @@ using ClosedXML.Excel;
 using Intv.Helpers;
 using Intv.Models;
 using Intv.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Intv.Controllers
 {
     [Route("api/[controller]")]
+    [Authorize(Roles = "Administrator")]
     public class ReportsController : ControllerBase
     {
         private readonly DapperService dapperService;
